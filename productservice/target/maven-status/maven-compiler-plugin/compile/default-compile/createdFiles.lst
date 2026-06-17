@@ -1,0 +1,10 @@
+com\ecommerce\productservice\service\ProductService.class
+com\ecommerce\productservice\DTO\ProductResponse$ProductResponseBuilder.class
+com\ecommerce\productservice\DTO\ProductResponse.class
+com\ecommerce\productservice\ProductserviceApplication.class
+com\ecommerce\productservice\repository\ProductRepository.class
+com\ecommerce\productservice\model\Product$ProductBuilder.class
+com\ecommerce\productservice\model\Product.class
+com\ecommerce\productservice\controller\ProductController.class
+com\ecommerce\productservice\DTO\ProductRequest.class
+com\ecommerce\productservice\DTO\ProductRequest$ProductRequestBuilder.class

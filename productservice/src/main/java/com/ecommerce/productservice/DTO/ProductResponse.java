@@ -3,8 +3,6 @@ package com.ecommerce.productservice.DTO;
 
 import java.math.BigDecimal;
 
-import com.ecommerce.productservice.model.Product.ProductBuilder;
-
 import lombok.Builder;
 import lombok.Data;
 import lombok.AllArgsConstructor;
