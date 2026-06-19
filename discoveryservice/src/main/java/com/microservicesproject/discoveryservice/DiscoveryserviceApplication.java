@@ -1,14 +1,14 @@
-package com.ecommerce.productservice;
+package com.microservicesproject.discoveryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableEurekaClient
-public class ProductserviceApplication {
+@EnableEurekaServer
+public class DiscoveryserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductserviceApplication.class, args);
+		SpringApplication.run(DiscoveryserviceApplication.class, args);
 	}
 
 }
