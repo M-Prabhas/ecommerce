@@ -27,7 +27,7 @@ import com.ecommerce.orderservice.model.OrderLineItems;
 public class OrderService {
 
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
+    private final WebClient.Builder webClient;
 
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
@@ -46,8 +46,8 @@ public class OrderService {
         ).toList();
 
       // only to save oredrs with items in stock
-      InventoryResponse [] result=webClient.get()
-               .uri("http/localhost::8082/api/inventory",uriBuilder ->
+      InventoryResponse [] result=webClient.build().get()
+               .uri("http://inventoryservice/api/inventory",uriBuilder ->
                 uriBuilder.queryParam("skuCode",skuCodes).build()
                )
                .retrieve()
