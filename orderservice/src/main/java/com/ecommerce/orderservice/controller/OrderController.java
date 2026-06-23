@@ -25,7 +25,7 @@ import com.ecommerce.orderservice.dto.OrderRequest;
 public class OrderController {
    
     private final OrderService orderService;
-    
+        
     @PostMapping
     @CircuitBreaker(name = "inventory", fallbackMethod = "fallbackPlaceOrder")
     @TimeLimiter(name = "inventory")
